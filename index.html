@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="src/css/sticked-album.css">
+    <link rel="stylesheet" href="src/css/vertical-bounce-handler.css">
+    <link rel="stylesheet" href="src/css/vertical-bounce-handler-at-floor.css">
+    <style>
+        .sticked > .eye:nth-child(1) {
+            margin-left: calc(200px * /* eye lookup scale */ 0.5 * 0.5);
+            margin-top: calc(50px * /* eye lookup scale */ 0.5 * 0.5);
+        }
+        .sticked > .eye:nth-child(2) {
+            margin-left: calc(200px * /* eye lookup scale */ 0.5 * 0.5);
+            margin-top: calc(50px * /* eye lookup scale */ 0.5 * 0.5);
+        }
+    </style>
+
+</head>
+<body class="eye">
+
+    <div class="statement-area">
+
+        <div class="sticked-album">
+
+            <div class="statement-area-at-front">
+                <div class="sticked">
+                    <div class="eye">
+                        <div class="statement-at-land"></div>
+                    </div>
+                </div>
+
+                <div class="sticked">
+                    <div class="eye">
+                        <div class="statement-at-floor"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="src/js/construct-sticked-album.js"></script>
+<script src="src/js/vertical-bounce-handler.js"></script>
+<script src="src/js/vertical-bounce-handler-at-floor.js"></script>
+
+</body>
+</html>

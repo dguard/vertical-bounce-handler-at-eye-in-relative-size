@@ -1,0 +1,54 @@
+/* original 700px+200px size */
+/* drawn placed at eye scale 0.5 * 0.5 */
+.statement-at-floor > .floor {
+    width: calc(700px * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc(350px * /* eye lookup scale */ 0.5 * 0.5);
+    background: lightgray;
+}
+.statement-at-floor > .floor > .column {
+
+}
+.statement-at-floor > .floor {
+    position: relative;
+}
+.statement-at-floor > .floor > .floor-belongings {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(1),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(2),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(3),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(4) {
+    width: calc((40px) * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((30px) */* eye lookup scale*/ 0.5 * 0.5);
+    background: aliceblue;
+    display: inline-block;
+}
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(1) {
+    margin-left: calc((30px + 4px) * /* eye lookup scale */ 0.5 * 0.5);
+}
+.statement-at-floor > .floor > .floor-belongings > .elev {
+    width: calc((30px + 4px*3 + 4px*2 + /* remaining */ 2px) * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    border: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    background: white;
+    display: inline-block;
+}
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(/*5+1*/ 6),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(/*5+2*/ 7),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(/*5+3*/ 8),
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(/*5+4*/ 9) {
+    width: calc((40px) * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((30px) * /* eye lookup scale */ 0.5 * 0.5 );
+    background: aliceblue;
+    display: inline-block;
+}
+.statement-at-floor > .floor > .floor-belongings > .column:nth-child(/*5+1*/ 6) {
+    width: calc((40px) * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-left: calc((30px + 4px) * /* eye lookup scale */ 0.5 * 0.5);
+}

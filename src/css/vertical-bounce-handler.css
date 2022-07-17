@@ -1,0 +1,89 @@
+/* ratio */
+/* original 700px+200px size; drawn placed at eye lookup scale 0.5 and another 0.5 */
+.statement-at-land {
+    width: calc((700px + 200px) * /* lookup scale */ 0.5 * 0.5);
+    /*background: lightyellow;*/
+}
+.statement-at-land > .floor {
+    width: calc((700px) * /* eye lookup scale */ 0.5 * 0.5);
+    min-height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+
+    background: yellow;
+    position: relative;
+}
+.statement-at-land > .floor > .closing {
+    height: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: yellow;
+}
+.statement-at-land > .floor > .column:nth-child(1),
+.statement-at-land > .floor > .column:nth-child(2),
+.statement-at-land > .floor > .column:nth-child(3),
+.statement-at-land > .floor > .column:nth-child(4) {
+    width: calc((40px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((30px + 4px) /* remaining */ /* eye lookip scale */ * 0.5 * 0.5);
+
+    /* vertical-width */
+    height: calc((70px) * /* eye lookup scale */ 0.5 * 0.5);
+    display: inline-block;
+    background: antiquewhite;
+}
+.statement-at-land > .floor > .column:nth-child(1+1) {
+    width: calc((40px + 40px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((30px + 4px + /* remaining */ 2px*4) * /* eye lookup scale */ 0.5 * 0.5);
+
+    /* vertical-width */
+    /*height: 20px;*/
+    /*display: inline-block;*/
+    background: antiquewhite;
+}
+.statement-at-land > .floor > .column:nth-child(1) {
+    margin-left: calc((10px + 24px + /* remaining */ 2px*4) * /* eye lookup scale */ 0.5 * 0.5);
+}
+.statement-at-land > .floor > .elev {
+    box-sizing: border-box;
+    position: relative;
+
+    /* proposed width and additional padding */
+    width: calc((30px + 4px*3 + 4px*2 + /* remaining */ 2px) * /* eye lookup scale */ 0.5 * 0.5);
+    height: calc((70px) * /* eye lookup scale */ 0.5 * 0.5);
+    border: calc((20px) * /* eye lookup scale */ 0.5 * 0.5);
+    display: inline-block;
+    background: white;
+}
+.floor > .elev > div {
+    position: absolute;
+    top: calc((40px) * 0.5 * 0.5);
+}
+.statement-at-land > .floor > .column:nth-child(/* 5+1 */ 6),
+.statement-at-land > .floor > .column:nth-child(/* 5+2 */ 7),
+.statement-at-land > .floor > .column:nth-child(/* 5+3 */ 8),
+.statement-at-land > .floor > .column:nth-child(/* 5+4 */ 9) {
+    width: calc((40px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((28px + 4px) /* remaining */ * /* eye lookup scale */ 0.5 * 0.5);
+
+    /* vertical-width */
+    height: calc((70px) * /* eye lookup scale */ 0.5 * 0.5);
+    display: inline-block;
+    background: antiquewhite;
+}
+.statement-at-land > .floor > .column:nth-child(5 + 1 + 1) {
+    width: calc((40px + 40px) * /* eye lookup scale */ 0.5 * 0.5);
+    margin-right: calc((30px + 4px + /* remaining */ 2px*4) * /* eye lookup scale */ 0.5 * 0.5);
+
+    /* vertical-width */
+    /*height: 20px;*/
+    /*display: inline-block;*/
+    background: antiquewhite;
+}
+.statement-at-land > .floor > .column:nth-child(/* 5 + 1 */ 6) {
+    margin-left: calc(/* 10px */ (20px) * /* eye lookup scale */ 0.5 * 0.5);
+}
+.top-statement {
+    height: calc(20px * /* eye lookup scale */ 0.5 * 0.5);
+    width: calc(700px * /* eye lookup scale */ 0.5 * 0.5);
+    background: yellow;
+}

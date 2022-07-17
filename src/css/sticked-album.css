@@ -1,0 +1,83 @@
+body.eye {
+    margin-left: 250px;
+    margin-top: 250px;
+}
+.statement-area-at-front {
+    width: 2100px;
+    height: 350px;
+}
+.statement-area-at-front > .sticked:nth-child(1) {
+    width: 700px;
+    height: 350px;
+
+    box-sizing: border-box;
+    border: 1px solid;
+    display: inline-block;
+    float: left;
+
+    /*z-index: 4;*/
+    background: white;
+
+    position: relative;
+}
+.statement-area-at-front > .sticked:nth-child(2) {
+    width: 700px;
+    height: 350px;
+
+    box-sizing: border-box;
+    border: 1px solid;
+    display: inline-block;
+    float: left;
+
+    margin-left: -250px;
+    margin-top: -50px;
+
+    /*z-index: 2;*/
+    background: white;
+    position: relative;
+}
+.statement-area-at-front > .sticked:nth-child(3) {
+    width: 700px;
+    height: 350px;
+
+    box-sizing: border-box;
+    border: 1px solid;
+    display: inline-block;
+    float: left;
+
+    margin-left: -250px;
+    /*z-index: 1;*/
+    background: white;
+
+    position: relative;
+}
+
+
+@keyframes toggleCard {
+    25% {
+        /* */
+    }
+    50% {
+        transform: translateY(-450px);
+    }
+    75% {
+        /* */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes toggleCard2ndCard {
+    25% {
+        /* z-index: 2; */
+    }
+    50% {
+        transform: translateY(-450px);
+    }
+    75% {
+        /* z-index: 4; */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
